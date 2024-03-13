@@ -59,5 +59,60 @@ The bug was in the nested `for` loop where it checks the conditon if `j` is less
 ## Information Needed for Setup
 
 **File Structure**
+```
+lab3/
+
+./lab3:
+Arrays.class  Arrays.java  ArrayTests.class  ArrayTests.java  lib/  test.sh
+
+./lab3/lib:
+hamcrest-core-1.3.jar  junit-4.13.2.jar
+```
+
+**Contents of each file before fixing bug** <br>
+ Arrays.java: <br> <br>
+ ```
+public class Arrays {
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i++) {
+      int temp = arr[arr.length - i -1];
+      arr[arr.length - i - 1] = arr[i];
+      arr[i] = temp;
+    }
+  }
+
+  // Uses selection sort to sort the given array
+
+  static int[] sort(int[] arr) {
+
+    // Start replacing smallest values starting from the beginning of the array
+    int arrayLength = arr.length;
+
+    for(int i = 0; i < arrayLength-1; i++) {
+
+      // Finds the minimum element after the index
+      int minIndex= i;
+      
+      for(int j = minIndex+1; j < arrayLength-1; j++) {
+
+        if(arr[j] < arr[minIndex]) {
+
+          minIndex = j;
+        }
+      }
+
+      // Swap the found minimum element with the first element 
+      int temp = arr[i];
+      arr[i] = arr[minIndex];
+      arr[minIndex] = temp;
+    }
+
+    return arr;
+  }
+
+}
+  ```
 
 
