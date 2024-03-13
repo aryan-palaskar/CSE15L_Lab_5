@@ -18,6 +18,8 @@ JUnit Test code for the method <br>
   }
 
 ```
-<br>
-TA, <br><br>
-Hi, I suggest running jdb (Java Debugger) on the test file and make a breakpoint at the line where
+
+TA, 
+Hi, I suggest running jdb (Java Debugger) on the test file and make a breakpoint at the line where `assertArrayEquals` is so you can inspect the contents of the sorted array at each index. 
+
+
