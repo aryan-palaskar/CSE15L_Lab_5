@@ -18,4 +18,4 @@ JUnit Test code for the method <br>
 ```
 <br>
 TA, <br><br>
-Hi, I suggest running jdb (Java Debugger) on the Test
+Hi, I suggest running jdb (Java Debugger) on the test file and make a breakpoint at the line where `assertArrayEquals` 
