@@ -115,4 +115,34 @@ public class Arrays {
 }
   ```
 
+ArrayTests.java: 
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = {3,4,5,6,1,2};
+    Arrays.reverseInPlace(input1);
+    assertArrayEquals(new int[]{2,1,6,5,4,3}, input1);
+	}
+
+
+  @Test
+  public void testSort() {
+    int[] input1 = {3,4,5,6,1,2};
+    int[] sorted = Arrays.sort(input1);
+    assertArrayEquals(new int[]{1,2,3,4,5,6}, sorted);
+  }
+}
+```
+
+test.sh: 
+```
+javac -g -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+
+java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
+```
+
 
