@@ -19,7 +19,7 @@ JUnit Test code for the method <br>
 
 ```
 
-**TA,** 
+**TA,** <br><br>
 Hi, I suggest running jdb (Java Debugger) on the test file and make a breakpoint at the line where `assertArrayEquals` is so you can inspect the contents of the sorted array at each index and identify what the problem is. 
 
 
