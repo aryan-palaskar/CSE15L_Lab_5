@@ -9,13 +9,15 @@ Hi, I am getting the following error after running tests on the `sort` method wi
 
 JUnit Test code for the method <br>
 ```
+
  @Test
   public void testSort() {
     int[] input1 = {3,4,5,6,1,2};
     int[] sorted = Arrays.sort(input1);
     assertArrayEquals(new int[]{1,2,3,4,5,6}, sorted);
   }
+
 ```
 <br>
 TA, <br><br>
-Hi, I suggest running jdb (Java Debugger) on the test file and make a breakpoint at the line where `assertArrayEquals` 
+Hi, I suggest running jdb (Java Debugger) on the test file and make a breakpoint at the line where
