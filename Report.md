@@ -150,12 +150,12 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
 `$ bash test.sh` to run JUnit tests at the beginning before fixing the bug.<br>
 `$ javac -g -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java` compile the java files using `-g` option that adds information for the debugger in the class files. <br>
 `$ jdb -classpath ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests` running jdb on the test file `ArrayTests.java`. <br>
-`> stop at ArrayTests:17` to create a breakpoint before checking if the `sorted` array is equal to expected result. 
-`run` to run the debugger. 
-`main[1] dump sorted` to print out the contents of the array after running the `sort` method. 
-`main[1] exit` to exit the debugger. 
-`vim Arrays.java` open the java file in vim to edit it. 
-`25<J> 14<E> <x><X> :wq` the keys pressed to fix the bug in the java file and save it. 
+`> stop at ArrayTests:17` to create a breakpoint before checking if the `sorted` array is equal to expected result. <br>
+`run` to run the debugger. <br>
+`main[1] dump sorted` to print out the contents of the array after running the `sort` method. <br>
+`main[1] exit` to exit the debugger. <br>
+`vim Arrays.java` open the java file in vim to edit it. <br>
+`25<J> 14<E> <x><X> :wq` the keys pressed to fix the bug in the java file and save it. <br>
 
 
 
