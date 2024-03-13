@@ -145,7 +145,7 @@ javac -g -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
 ```
 
-**Command Lines to trigger the bug**
+**Command Lines to trigger the bug** <br>
 
 `$ bash test.sh` to run JUnit tests at the beginning before fixing the bug.<br>
 `$ javac -g -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java` compile the java files using `-g` option that adds information for the debugger in the class files. <br>
@@ -157,7 +157,7 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
 `$ vim Arrays.java` open the java file in vim to edit it. <br>
 `25<J> 14<E> <x><X> :wq` the keys pressed to fix the bug in the java file and save it. <br>
 
-**Editing for the bug**
+**Editing for the bug** <br>
 In the second `for` loop it was skipping over the last value in the array because the conditon was `j < arrayLength-1` to fix it we don't sutract the length by 1, so it would be `j < arrayLength` after fixing. 
 
 
