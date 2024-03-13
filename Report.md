@@ -23,7 +23,7 @@ JUnit Test code for the method <br>
 Hi, I suggest running `jdb` (Java Debugger) on the test file and making a breakpoint at the line where `assertArrayEquals` is so you can inspect the contents of the sorted array at each index before its compared to the correct sorted array. After the inspection you should find the bug in the `sort` method. 
 
 **Student,** <br><br>
-After running `jdb` on the test file and inspecting the values of the sorted array, I found out that the value at the last index is not getting sorted. <br>
+After running `jdb` on the test file and inspecting the values of the sorted array, I found out that the value at the last index is not getting sorted. <br><br>
 ![Image](lab52.JPG) <br><br>
 The code for the sort method is: 
 ```
