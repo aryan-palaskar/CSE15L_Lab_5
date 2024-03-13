@@ -157,7 +157,11 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
 `$ vim Arrays.java` open the java file in vim to edit it. <br>
 `25<J> 14<E> <x><X> :wq` the keys pressed to fix the bug in the java file and save it. <br>
 
-**Editing for the bug** <br>
+**Editing for the bug** <br><br>
 In the second `for` loop it was skipping over the last value in the array because the conditon was `j < arrayLength-1` to fix it we don't sutract the length by 1, so it would be `j < arrayLength` after fixing. 
+
+## Part 2 - Reflection
+
+Learning about vim and jdb was very interesting in the second half of the quarter. Jdb made debugging a little easier and faster and vim showed me how to edit files and commit-push the file to github all through the command line. 
 
 
