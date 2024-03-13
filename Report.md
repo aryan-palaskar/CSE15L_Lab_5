@@ -154,8 +154,10 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
 `run` to run the debugger. <br>
 `main[1] dump sorted` to print out the contents of the array after running the `sort` method. <br>
 `main[1] exit` to exit the debugger. <br>
-`vim Arrays.java` open the java file in vim to edit it. <br>
+`$ vim Arrays.java` open the java file in vim to edit it. <br>
 `25<J> 14<E> <x><X> :wq` the keys pressed to fix the bug in the java file and save it. <br>
 
+**Editing for the bug**
+In the second `for` loop it was skipping over the last value in the array because the conditon was `j < arrayLength-1` to fix it we don't sutract the length by 1, so it would be `j < arrayLength` after fixing. 
 
 
