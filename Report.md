@@ -151,14 +151,14 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
 `$ javac -g -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java` compile the java files using `-g` option that adds information for the debugger in the class files. <br>
 `$ jdb -classpath ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests` running jdb on the test file `ArrayTests.java`. <br>
 `> stop at ArrayTests:17` to create a breakpoint before checking if the `sorted` array is equal to expected result. <br>
-`run` to run the debugger. <br>
+`> run` to run the debugger. <br>
 `main[1] dump sorted` to print out the contents of the array after running the `sort` method. <br>
 `main[1] exit` to exit the debugger. <br>
-`$ vim Arrays.java` open the java file in vim to edit it. <br>
-`25<J> 14<E> <x><X> :wq` the keys pressed to fix the bug in the java file and save it. <br>
+`$ vim Arrays.java` open the java file in `vim` to edit it. <br>
+`25<J> 14<E> <X><X> :wq` the keys pressed to fix the bug in the java file and save it. <br>
 
 **Editing for the bug** <br><br>
-In the second `for` loop it was skipping over the last value in the array because the conditon was `j < arrayLength-1` to fix it we don't sutract the length by 1, so it would be `j < arrayLength` after fixing. 
+In the second `for` loop it was skipping over the last value in the array because the conditon was `j < arrayLength-1` to fix it we don't subract the length by 1, so it would be `j < arrayLength` after fixing. 
 
 ## Part 2 - Reflection
 
